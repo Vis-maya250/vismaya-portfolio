@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vismaya Vinod — Where Dreams Take Flight</title>
+<meta name="description" content="Portfolio of Vismaya Vinod, Computer Science Engineering student.">
+
+<!-- Google Fonts: Playfair Display for elegant headings, Poppins for clean body text,
+     Dancing Script used sparingly for one soft accent line only -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================
+     DECORATIVE LAYER: butterflies + sparkles
+     pointer-events: none so they never block clicks
+     ============================================ -->
+<div class="decor-layer" aria-hidden="true">
+  <span class="butterfly b1">🦋</span>
+  <span class="butterfly b2">🦋</span>
+  <span class="butterfly b3">🦋</span>
+  <span class="butterfly b4">🦋</span>
+  <span class="butterfly b5">🦋</span>
+  <div class="sparkle-field" id="sparkleField"></div>
+</div>
+
+<!-- ============================================
+     NAVIGATION BAR
+     ============================================ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Vismaya<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#internship" class="nav-link">Internship</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================
+       HOME / HERO SECTION
+       ============================================ -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-welcome">Welcome to My Journey</p>
+
+      <!-- Framed photo area: the photo keeps its natural aspect ratio
+           (object-fit: contain — equivalent to background-size: contain
+           but keeps the <img> accessible with alt text) and never fills
+           the whole screen. Butterflies and sparkles are anchored around
+           the frame, not on top of the photo itself. -->
+      <div class="hero-frame-wrap">
+        <span class="frame-decor fd-butterfly fd-tl" aria-hidden="true">🦋</span>
+        <span class="frame-decor fd-sparkle fd-tr" aria-hidden="true">✨</span>
+        <span class="frame-decor fd-butterfly fd-bl" aria-hidden="true">🦋</span>
+        <span class="frame-decor fd-sparkle fd-br" aria-hidden="true">✨</span>
+
+        <div class="hero-frame">
+          <img src="images/myphoto.jpeg" alt="Photo of Vismaya Vinod">
+        </div>
+      </div>
+
+      <h1 class="hero-title">Where Dreams Take Flight <span class="butterfly-inline">🦋</span></h1>
+      <h2 class="hero-name">Hi, I'm Vismaya Vinod</h2>
+      <p class="hero-subtitle">Computer Science Engineering Student</p>
+      <p class="hero-intro">
+        Turning curiosity into skills, ideas into projects, and dreams into a career.
+      </p>
+
+      <!-- TODO: replace #about with nothing needed, but make sure resume.pdf
+           actually exists in your project folder for the download button below -->
+      <div class="hero-actions">
+        <a href="#about" class="btn-cta">Discover My Journey</a>
+        <a href="VISMAYA VINOD.pdf" class="btn-outline" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section id="about" class="section">
+    <h2 class="section-title" data-animate="fade-up">About Me</h2>
+
+    <div class="about-text" data-animate="fade-up">
+      <p>Hello! I'm Vismaya Vinod, a Computer Science Engineering student with a strong
+         interest in Web Development and emerging technologies.</p>
+
+      <p>I enjoy transforming ideas into useful and visually appealing digital
+         experiences. My journey in Computer Science has given me the opportunity to
+         explore technologies such as HTML, CSS, JavaScript, Python, React, Node.js,
+         and PostgreSQL, while working on academic and personal projects.</p>
+
+      <p>I have also gained practical exposure through an internship in Web
+         Development, where I had the opportunity to understand how technical
+         knowledge can be applied to real-world requirements.</p>
+
+      <p>I consider myself a hardworking, self-motivated, and quick learner. I enjoy
+         learning new technologies, solving problems, and continuously improving my
+         skills.</p>
+
+      <p>Beyond technology, I enjoy dancing, listening to music, and reading books.
+         These interests help me stay creative and maintain a positive mindset.</p>
+
+      <p>My goal is to begin my professional journey in the technology industry,
+         contribute to meaningful projects, and continue growing as a software
+         professional.</p>
+
+      <p class="about-quote">"I believe every dream begins with a step — and this
+         portfolio represents some of the steps in my journey."</p>
+    </div>
+
+    <div class="about-cards">
+      <div class="about-card" data-animate="slide-left">
+        <h3>Who I Am</h3>
+        <p>Computer Science Engineering Student</p>
+      </div>
+      <div class="about-card" data-animate="fade-up">
+        <h3>What I Love</h3>
+        <p>Web Development • Technology • Creating Projects</p>
+      </div>
+      <div class="about-card" data-animate="fade-up">
+        <h3>My Strengths</h3>
+        <p>Hardworking • Quick Learner • Self-Motivated</p>
+      </div>
+      <div class="about-card" data-animate="slide-right">
+        <h3>My Goal</h3>
+        <p>To build a successful career in the technology industry while continuously
+           learning and growing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EDUCATION SECTION (timeline)
+       ============================================ -->
+  <section id="education" class="section section-alt">
+    <h2 class="section-title" data-animate="fade-up">Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-animate="slide-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>B.Tech in Computer Science Engineering</h3>
+          <p>St. Joseph's College of Engineering and Technology, Palai</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-animate="slide-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3>Higher Secondary Education</h3>
+          <p>Muslim Girls Higher Secondary School</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SKILLS SECTION
+       ============================================ -->
+  <section id="skills" class="section">
+    <h2 class="section-title" data-animate="fade-up">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">🌐</span><h3>HTML</h3>
+      </div>
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">🎨</span><h3>CSS</h3>
+      </div>
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">⚡</span><h3>JavaScript</h3>
+      </div>
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">🐍</span><h3>Python</h3>
+      </div>
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">⚛️</span><h3>React</h3>
+      </div>
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">🟩</span><h3>Node.js</h3>
+      </div>
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">🐘</span><h3>PostgreSQL</h3>
+      </div>
+      <div class="skill-card" data-animate="scale">
+        <span class="skill-icon">🗄️</span><h3>SQL</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROJECTS SECTION
+       ============================================ -->
+  <section id="projects" class="section section-alt">
+    <h2 class="section-title" data-animate="fade-up">Projects</h2>
+
+    <div class="project-card" data-animate="fade-up">
+  <div class="project-image">🤝</div>  <div class="project-body">
+    <h3>WorkLink – Direct Labor Hiring Platform</h3><p>
+  A web-based platform designed to directly connect semi-skilled and
+  unskilled workers with customers looking for reliable and affordable
+  labor. The system reduces dependence on intermediaries and makes
+  employment more transparent, efficient, and accessible.
+</p>
+
+<p>
+  Key features include job posting, worker profiles and availability,
+  location-based matching, real-time notifications, in-app chat,
+  voice-to-text job posting, ratings and reviews, OTP-based verification,
+  real-time tracking, and an emergency backup worker module.
+</p>
+
+<div class="tag-list">
+  <span>Web Development</span>
+  <span>Location Matching</span>
+  <span>Real-Time Notifications</span>
+  <span>OTP Verification</span>
+</div>
+
+<div class="project-links">
+  <a href="https://worklink-frontend-9as1.onrender.com
+
+" target="_blank" rel="noopener">
+    WorkLink
+  </a>
+</div>
+
+  </div>
+</div>
+
+      <div class="project-card" data-animate="fade-up">
+        <div class="project-image">🤝</div>
+        <div class="project-body">
+          <h3>Internship &amp; Project Collaboration Portal</h3>
+          <p>A web application designed to help students manage internships and
+             collaborate on projects — including registration and login, a student
+             dashboard, internship management, project management, and profile
+             management.</p>
+          <div class="tag-list">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+          </div>
+          <!-- TODO: replace # with your real deployed link and GitHub repo link -->
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+            <a href="#" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INTERNSHIP SECTION
+       ============================================ -->
+  <section id="internship" class="section">
+    <h2 class="section-title" data-animate="fade-up">Internship</h2>
+
+    <div class="internship-card" data-animate="fade-up">
+      <h3>DRDO – Naval Physical and Oceanographic Laboratory (NPOL), Kochi</h3>
+      <p class="internship-role">Web Development Internship</p>
+      <p>During this internship, I gained hands-on, practical exposure to how
+         technical knowledge is applied in a real, professional setting. It helped me
+         understand development workflows beyond the classroom and strengthened my
+         confidence in applying my skills to real requirements.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CERTIFICATIONS SECTION
+       ============================================ -->
+  <section id="certifications" class="section section-alt">
+    <h2 class="section-title" data-animate="fade-up">Certifications</h2>
+
+    <!-- TODO: replace # in each card with your real certificate verification link -->
+    <div class="cert-grid">
+      <div class="cert-card" data-animate="scale">
+        <span class="cert-icon">📜</span>
+        <h3>Python Certification</h3>
+        <a href="certificates/python.pdf" target="_blank" rel="noopener" class="cert-link">Verify</a>
+      </div>
+      <div class="cert-card" data-animate="scale">
+        <span class="cert-icon">📊</span>
+        <h3>Data Structures and Algorithms</h3>
+        <a href="certificates/dsa.pdf" target="_blank" rel="noopener" class="cert-link">Verify</a>
+      </div>
+      <div class="cert-card" data-animate="scale">
+        <span class="cert-icon">🔐</span>
+        <h3>Cyber Security and Privacy</h3>
+        <a href="certificates/Cyber Security and Privacy (1).pdf" target="_blank" rel="noopener" class="cert-link">Verify</a>
+      </div>
+      <div class="cert-card" data-animate="scale">
+        <span class="cert-icon">🤖</span>
+        <h3>Introduction to Generative AI</h3>
+        <a href="certificates/generative-ai.pdf" target="_blank" rel="noopener" class="cert-link">Verify</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       HOBBIES SECTION
+       ============================================ -->
+  <section id="hobbies" class="section hobbies-section">
+    <h2 class="section-title" data-animate="fade-up">Beyond Code</h2>
+    <div class="hobbies-list" data-animate="fade-up">
+      <div class="hobby"><span>💃</span><p>Dancing</p></div>
+      <div class="hobby"><span>🎵</span><p>Listening to Music</p></div>
+      <div class="hobby"><span>📚</span><p>Reading Books</p></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section id="contact" class="section section-alt">
+    <h2 class="section-title" data-animate="fade-up">Contact</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-animate="slide-left">
+        <!-- TODO: replace with your real email, LinkedIn and GitHub URLs -->
+        <a href="mailto:vismayavinod250@gmail.com">✉️vismayavinod250@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vismaya-vinod-497675303" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a href="https://github.com/Vis-maya250" target="_blank" rel="noopener">💻 GitHub</a>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-animate="slide-right" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit" class="btn-cta btn-form">Send</button>
+        <p class="form-feedback" id="formFeedback"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer">
+  <p>© 2026 Vismaya Vinod. All Rights Reserved.</p>
+  <div class="footer-icons">
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">💻</a>
+    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+    <a href="mailto:vismaya.vinod@example.com" aria-label="Email">✉️</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
